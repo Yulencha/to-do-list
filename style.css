@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Yahfie Heavy";
+    src: url("fonts/Yahfie Heavy.ttf");
+  }
+
+:root {
+  --base-scale:calc(100vw / 75);
+  --h1-font-size:max(2em, min(4em, calc(100vw / 50 * 4)));
+  --li-font-size:max(1em, min(2em, calc(100vw / 50 * 2)));
+  --padding-size:max(1em, min(2em, calc(var(--base-scale) * 1)));
+  --margin-top-size:max(1em, min(2em, calc(var(--base-scale) * 2)));
+  --margin-bottom-size:max(1em, min(2em, calc(var(--base-scale) * 2)));
+  --margin--size:max(0.5em, min(5em, calc(var(--base-scale) * 2)));
+  --border-radius:max(0.25em, min(0.75em, calc(var(--base-scale) * 1)));
+} 
+
+body {
+    background-color: #B7DEE8;
+    font-family: "Yahfie Heavy";
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size:var(--h1-font-size);
+}
+
+
+li {
+  font-size:var(--li-font-size);
+  list-style-type: none;
+}
+
+.design {
+  background: #FFFBEA;
+  margin-top: var(--margin-top-size);
+  margin-bottom: var(--margin-bottom-size);
+  margin-left: var(--margin--size);
+  margin-right: var(--margin--size);
+  height: 90vh;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius);
+  padding: var(--padding-size);
+  
+}
+
+.input-container {
+  font-family: "Yahfie Heavy";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button13 {
+  font-family: "Yahfie Heavy";
+  display: inline-block;
+  font-size: max(1em, min(2em, calc(100vw / 75 * 2)));
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: nowrap;
+  padding: 0.3em;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+  margin-top: 5px;
+  
+}
+
+.button13:hover {
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+.button13:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+}
+
+.input-text {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: max(1em, min(2em, calc(100vw / 75 * 2)));
+  padding: .3em 0;
+}
+
+.input-chekbox {
+  width: 20px;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+svg:active {
+  transform: scale(2);
+}
+
+.finished-task-color {
+  color: rgb(180, 180, 180);
+}
+
+.line-through-text {
+text-decoration: line-through rgb(180, 180, 180);
+}
+
+.text-of-task {
+  display: inline-block;
+}
+
+
+.fa-regular:active {
+transform: scale(2);
+}
+
+.unfinished-task-color {
+  color: rgb(0, 0, 0);
+}
+
+.usual-text {
+text-decoration: none;
+}
